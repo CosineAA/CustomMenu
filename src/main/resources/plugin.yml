@@ -1,4 +1,4 @@
-main: com.cosine.custommenu.main.CustomGui
+main: com.cosine.custommenu.main.CustomMenu
 version: 1.0
 name: CustomMenu
 author: Cosine_A

@@ -44,20 +44,21 @@ class InventoryListener(plugin: CustomMenu) : Listener {
             val name = getMenuName(inventory.name)
 
             when (event.rawSlot) {
-                10 -> {
+                9 -> {
                     inventoryGui.settingItemMenu(player, name)
                 }
-                12 -> {
+                11 -> {
                     value.npc[player.uniqueId] = name
                     player.sendMessage("$option 상점이 열릴 NPC의 이름을 적어주세요.")
                 }
-                14 -> {
+                13 -> {
                     changeRow(player, name, 6, 1, "늘릴", event.isLeftClick)
                     changeRow(player, name, 1, -1, "줄일", event.isRightClick)
                 }
-                16 -> {
+                15 -> {
                     inventoryGui.settingSlotMenu(player, name)
                 }
+                17 -> {}
             }
         }
         if (inventory.name.contains("§c§c§c")) {

@@ -23,10 +23,11 @@ class InventoryGui(plugin: CustomMenu) {
         val row = menuConfig.getInt("$name.라인")
         val inventory: Inventory = Bukkit.createInventory(null, 3 * 9, "$name 설정§a§a§a")
 
-        set("&b&l아이템 설정", listOf("&f클릭 시 아이템이 설정 창으로 이동합니다."), Material.CHEST, 0, 1, 10, inventory)
-        set("&c&lNPC 설정", listOf("&f우클릭 시 메뉴가 나올 NPC의 이름을 설정합니다."), Material.NAME_TAG, 0, 1, 12, inventory)
-        set("&d&l라인 설정", listOf("&a좌클릭&f 시 라인 1을 증가시킵니다.", "&c우클릭&f 시 라인 1을 감소시킵니다.", "&7현재 라인 수: $row"), Material.ANVIL, 0, 1, 14, inventory)
-        set("&6&l슬롯 설정", listOf("&f클릭 시 각 슬롯을 설정하는 창으로 이동합니다."), Material.DIAMOND, 0, 1, 16, inventory)
+        set("&b&l아이템 설정", listOf("&f클릭 시 아이템이 설정 창으로 이동합니다."), Material.CHEST, 0, 1, 9, inventory)
+        set("&c&lNPC 설정", listOf("&f우클릭 시 메뉴가 나올 NPC의 이름을 설정합니다."), Material.NAME_TAG, 0, 1, 11, inventory)
+        set("&d&l라인 설정", listOf("&a좌클릭&f 시 라인 1을 증가시킵니다.", "&c우클릭&f 시 라인 1을 감소시킵니다.", "&7현재 라인 수: $row"), Material.ANVIL, 0, 1, 13, inventory)
+        set("&6&l슬롯 설정", listOf("&f클릭 시 각 슬롯의 정보를 설정하는 창으로 이동합니다."), Material.DIAMOND, 0, 1, 15, inventory)
+        set("&a&l명령어 설정", listOf("&f클릭 시 각 슬롯의 명렁어를 설정하는 창으로 이동합니다."), Material.DIAMOND, 0, 1, 17, inventory)
 
         player.openInventory(inventory)
     }

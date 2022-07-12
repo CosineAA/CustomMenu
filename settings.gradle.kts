@@ -1,3 +1,3 @@
 
-rootProject.name = "CustomGUI"
+rootProject.name = "CustomMenu"
 
