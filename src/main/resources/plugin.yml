@@ -1,0 +1,10 @@
+main: com.cosine.custommenu.main.CustomGui
+version: 1.0
+name: CustomMenu
+author: Cosine_A
+description: 커스텀 메뉴 플러그인
+
+commands:
+  메뉴:
+  메뉴설정:
+  X:
